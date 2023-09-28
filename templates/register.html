@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simplon Côte d'Ivoire</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='t.css')}}">
+</head>
+<body>
+  <h1>Simplon Côte d'Ivoire</h1>
+  <h2>Register</h2>
+  <a href="{{ url_for('list_participants') }}">liste_user</a>
+  <form action="/register" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="nom"><br>
+    <label for="first_name">First name:</label><br>
+    <input type="text" id="prenom" name="prenom"><br>
+    <label for="phone_number">Phone number:</label><br>
+    <input type="text" id="phone_number" name="telephon"><br>
+    <label for="email_address">Email address:</label><br>
+    <input type="text" id="email_address" name="email"><br><br>
+    <input type="submit" value="Register">
+  </form> 
+</body>
+</html>
